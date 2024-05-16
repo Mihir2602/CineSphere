@@ -27,7 +27,7 @@ function Movies({handleAddToWatchlist, handleRemoveFromWatchlist, watchlist}) {
   useEffect(() => {
     axios
       .get(
-        `https://api.themoviedb.org/3/movie/popular?api_key=b254f6a0afdc56e27e9c364ed5e13e2d&language=en-US&page=${pageNo}`
+        `https://api.themoviedb.org/3/movie/popular?api_key=2d1b96d664c77792da5ac3dc844cc28f&language=en-US&page=${pageNo}`
       )
       .then(function (res) {
         setMovies(res.data.results);
